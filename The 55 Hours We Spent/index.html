@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#14100c" />
+    <title>—</title>
+    <!-- One person will ever open this. Nothing here is for a crawler. -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- The one moment before she opens it: a chat thread showing a card. It is
+         the cover of the notebook and nothing more — no memory, no spoiler. The
+         browser tab stays "—"; only the shared card speaks, and it only says who
+         it is for. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="For Bebu ♥️" />
+    <meta property="og:description" content="Happy Three Months." />
+    <meta property="og:image" content="assets/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A kraft envelope lying on a table" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="For Bebu ♥️" />
+    <meta name="twitter:description" content="Happy Three Months." />
+    <meta name="twitter:image" content="assets/og-cover.jpg" />
+
+    <!-- The first screen is drawn, not photographed: the envelope, the board and
+         the paper are all CSS. The only thing worth fetching early is the first
+         photograph she will actually be shown. -->
+    <link rel="preload" as="image" href="assets/v2/arrival.jpg" />
+    <link rel="stylesheet" href="css/notebook.css" />
+  </head>
+
+  <body>
+    <!-- Everything is built by the book. There is nothing to lay out here,
+         because there is only ever one thing on screen: a page. -->
+    <main class="notebook" id="notebook"></main>
+
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
